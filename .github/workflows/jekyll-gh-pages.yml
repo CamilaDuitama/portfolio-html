@@ -14,5 +14,5 @@ jobs:
     - name: Build Jekyll site
       uses: actions/jekyll-build-pages@v1
       with:
-        source: ./docs
-        destination: ./docs/_site
+        source: .
+        destination: ./_site
