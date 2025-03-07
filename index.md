@@ -1,8 +1,250 @@
----
-layout: default
-title: Camila Duitama - Portfolio
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Camila Duitama González - Portfolio</title>
+    <meta name="title" content="Camila Duitama González - Portfolio" />
+    <meta
+      name="description"
+      content="Python‑focused software engineer with advanced expertise in backend development, data engineering, and algorithmic solutions."
+    />
 
-# Welcome to My Portfolio
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://camiladuitama.github.io/gradfolio/"
+    />
+    <meta property="og:title" content="Camila Duitama González - Portfolio" />
+    <meta
+      property="og:description"
+      content="Python‑focused software engineer with advanced expertise in backend development, data engineering, and algorithmic solutions."
+    />
+    <meta
+      property="og:image"
+      content="assets/profile-image.png"
+    />
 
-(Convert your src/index.html content to Markdown)
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://camiladuitama.github.io/gradfolio/"
+    />
+    <meta property="twitter:title" content="Camila Duitama González - Portfolio" />
+    <meta
+      property="twitter:description"
+      content="Python‑focused software engineer with advanced expertise in backend development, data engineering, and algorithmic solutions."
+    />
+    <meta
+      property="twitter:image"
+      content="assets/profile-image.png"
+    />
+
+    <!-- Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon/android-chrome-512x512.png"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="https://camiladuitama.github.io/gradfolio/"
+              ><img src="assets/logo.png" alt="Your Logo"
+            /></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-link" href="#">CONTACT</a></li>
+            <li><a class="nav-link" href="#">BLOG</a></li>
+            <li>
+              <a
+                class="nav-link btn btn-primary"
+                href="https://camiladuitama.github.io/gradfolio/"
+                >RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="header-container">
+        <img
+          class="profile-image"
+          src="assets/profile-image.png"
+          alt=""
+        />
+        <h1>Hi I'm Camila Duitama González</h1>
+
+        <div class="content-text">
+          <h2>Data Scientist</h2>
+          <h2>Bioinformatician</h2>
+
+          <p>
+            Python‑focused software engineer with advanced expertise in backend development, data engineering, and algorithmic solutions.
+          </p>
+        </div>
+        <a
+          href="mailto:camiladuitama@gmail.com"
+          class="btn btn-secondary"
+          target="_blank"
+          >Connect With Me</a
+        >
+      </section>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Projects</h2>
+        <p>Check out some of my personal and paid projects</p>
+      </div>
+
+      <article class="project">
+        <!-- Project 1 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>MUSET</h3>
+              <p>C++</p>
+            </div>
+
+            <div class="project-link">
+              <a href="https://github.com/CamilaDuitama/muset" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>aKmerBroom</h3>
+              <p>Python</p>
+            </div>
+
+            <div class="project-link">
+              <a href="https://github.com/CamilaDuitama/aKmerBroom" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>decOM</h3>
+              <p>C++</p>
+            </div>
+
+            <div class="project-link">
+              <a href="https://github.com/CamilaDuitama/decOM" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <a href="#" class="btn btn-secondary"
+        target="_blank" >See More <i class="fas fa-arrow-right"></i
+      ></a>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:camiladuitama@gmail.com">camiladuitama@gmail.com</a>
+        <!-- Social links -->
+        <div class="social">
+          <a href="#" target="_blank"
+            ><img src="assets/facebook-icon.svg" alt="Facebook"
+          /></a>
+          <a href="https://web-cdn.bsky.app/profile/camiladuitama.bsky.social" target="_blank"
+            ><img src="assets/bluesky_icon.png" alt="Bluesky"
+          /></a>
+          <a href="https://www.linkedin.com/in/camiladuitama" target="_blank"
+            ><img src="assets/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="https://github.com/CamilaDuitama" target="_blank"><img src="assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+        <!-- Attribution -->
+        <div class="attribution">
+          <a
+            href="https://github.com/CommunityPro/portfolio-html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://user-images.githubusercontent.com/62628408/157202263-9174da24-b19a-4017-9b7c-a1d26ae8f014.svg"
+              alt="attribution"
+              width="150px"
+            />
+          </a>
+        </div>
+        <p>Copyright &copy; Camila Duitama González <span id="datee"></span>, All rights reserved</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
