@@ -1,0 +1,19 @@
+title: Camila Duitama Portfolio
+description: Personal Portfolio Website
+theme: jekyll-theme-minimal
+
+# Build settings
+source: ./docs
+destination: ./docs/_site
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Markdown settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  style: compressed
