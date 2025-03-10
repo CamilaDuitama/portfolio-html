@@ -1,15 +1,32 @@
-title: Camila Duitama Portfolio
-description: Personal Portfolio Website
-theme: jekyll-theme-minimal
+name: Jekyll Site CI
 
-# Ensure these are set correctly
-source: .
-destination: ./_site
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
-# Plugins
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build Jekyll site
+      uses: actions/jekyll-build-pages@v1
+      with:
+        source: .
+        destination: ./_site
 
-# Markdown settings
-markdown: kramdown
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
