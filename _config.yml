@@ -11,11 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    
     - name: Build Jekyll site
       uses: actions/jekyll-build-pages@v1
       with:
         source: .
         destination: ./_site
+    
+    # Add this step to upload the artifact
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./_site
 
   deploy:
     needs: build
