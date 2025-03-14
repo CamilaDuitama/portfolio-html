@@ -1,39 +1,21 @@
-name: Jekyll Site CI
+title: Camila Duitama Portfolio
+description: Personal Portfolio Website
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+# Ensure these are set
+source: .
+destination: ./_site
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    
-    - name: Build Jekyll site
-      uses: actions/jekyll-build-pages@v1
-      with:
-        source: .
-        destination: ./_site
-    
-    # Add this step to upload the artifact
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: ./_site
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+# Markdown settings
+markdown: kramdown
+
+# Defaults to ensure layout is applied
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
