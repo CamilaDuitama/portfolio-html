@@ -1,5 +1,8 @@
 title: Camila Duitama Portfolio
-description: Personal Portfolio Website
+description: Python‑focused software engineer with advanced expertise in backend development, data engineering, and algorithmic solutions.
+
+baseurl: "/portfolio-html"
+url: "https://camiladuitama.github.io"
 
 # Ensure these are set
 source: .

@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/utilities.css">
-</head>
-<body>
+    <meta name="title" content="{{ page.title }}" />
+    <meta name="description" content="{{ site.description }}" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:image" content="{{ site.baseurl }}/assets/profile-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{ site.url }}{{ site.baseurl }}" />
+    <meta property="twitter:title" content="{{ page.title }}" />
+    <meta property="twitter:description" content="{{ site.description }}" />
+    <meta property="twitter:image" content="{{ site.baseurl }}/assets/profile-image.png" />
+
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/assets/favicon/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ site.baseurl }}/assets/favicon/android-chrome-512x512.png" />
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon/favicon.ico" />
+    <link rel="manifest" href="{{ site.baseurl }}/assets/favicon/site.webmanifest" />
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/utilities.css" />
+  </head>
+  
+  <body>
     {{ content }}
-    <script src="/assets/js/script.js"></script>
-</body>
+    
+    <script src="{{ site.baseurl }}/assets/js/script.js"></script>
+  </body>
 </html>
