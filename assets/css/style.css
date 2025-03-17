@@ -162,6 +162,7 @@ body {
   background-color: var(--card-background);
   margin: 5.5rem 0;
 }
+
 /* Projects */
 #projects {
   display: flex;
@@ -179,6 +180,18 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(250px, auto);
   grid-gap: 0.9rem;
+}
+
+.project .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project .card img {
+  width: 100%; /* Full width of the card */
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Maintains aspect ratio, crops if needed */
+  object-position: center; /* Centers the image */
 }
 
 .card .project-bio p {
@@ -254,9 +267,14 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .project .card img {
+    height: 250px; /* Slightly smaller on medium screens */
+  }
 }
 
 @media (max-width: 768px) {
+  /* Empty media query, you can add specific styles if needed */
 }
 
 @media (max-width: 670px) {
@@ -325,6 +343,10 @@ body {
   .project {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .project .card img {
+    height: 200px; /* Even smaller on mobile */
   }
 
   .header-container .btn {
