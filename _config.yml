@@ -22,3 +22,8 @@ defaults:
       path: ""
     values:
       layout: default
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
