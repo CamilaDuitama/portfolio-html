@@ -2,7 +2,7 @@
 layout: project
 title: MUSET
 subtitle: Bioinformatics Data Processing Tool
-date: 2024
+date: 17-03-2025
 technologies: [Python, Bioinformatics, Data Engineering]
 github: https://github.com/CamilaDuitama/muset
 image: /assets/project/MUSET.pdf
